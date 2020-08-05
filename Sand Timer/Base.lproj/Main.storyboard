@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sand_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Background View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vss-KX-jpk" userLabel="Title View">
+                                <rect key="frame" x="20" y="44" width="374" height="104"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE YOUR TIME!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h27-6s-hfP" userLabel="Title Label">
+                                        <rect key="frame" x="40" y="34" width="294" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h27-6s-hfP" firstAttribute="top" secondItem="vss-KX-jpk" secondAttribute="top" constant="34" id="4Iw-eq-svP"/>
+                                    <constraint firstAttribute="trailing" secondItem="h27-6s-hfP" secondAttribute="trailing" constant="40" id="K6z-yS-tTX"/>
+                                    <constraint firstAttribute="bottom" secondItem="h27-6s-hfP" secondAttribute="bottom" constant="34" id="UYU-kW-tE4"/>
+                                    <constraint firstItem="h27-6s-hfP" firstAttribute="leading" secondItem="vss-KX-jpk" secondAttribute="leading" constant="40" id="WUA-uS-Fcx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wj3-ad-X50" userLabel="Sand Timer 1min View">
+                                <rect key="frame" x="107" y="156" width="200" height="195"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqn-wS-mBf">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="blue">
+                                            <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="colorSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aHt-nO-vgk"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1min_hourglass-dark blue stand" translatesAutoresizingMaskIntoConstraints="NO" id="IAA-d1-uwc">
+                                        <rect key="frame" x="36" y="8" width="128" height="179"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="IAA-d1-uwc" secondAttribute="trailing" constant="36" id="I3h-xB-skF"/>
+                                    <constraint firstItem="IAA-d1-uwc" firstAttribute="top" secondItem="Wj3-ad-X50" secondAttribute="top" constant="8" id="YTY-Wx-6KZ"/>
+                                    <constraint firstItem="IAA-d1-uwc" firstAttribute="leading" secondItem="Wj3-ad-X50" secondAttribute="leading" constant="36" id="r98-cn-6yu"/>
+                                    <constraint firstAttribute="bottom" secondItem="IAA-d1-uwc" secondAttribute="bottom" constant="8" id="xcK-kM-5Xa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeC-ia-Csg" userLabel="Sand Timer 5min View">
+                                <rect key="frame" x="107" y="359" width="200" height="195"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SO-zs-s64">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="green">
+                                            <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="colorSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nnd-P2-cem"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5min_hourglass-green stand" translatesAutoresizingMaskIntoConstraints="NO" id="iOh-S6-kjT">
+                                        <rect key="frame" x="36" y="8" width="128" height="179"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="iOh-S6-kjT" secondAttribute="bottom" constant="8" id="Nzo-yD-ppc"/>
+                                    <constraint firstItem="iOh-S6-kjT" firstAttribute="leading" secondItem="JeC-ia-Csg" secondAttribute="leading" constant="36" id="mRe-Hs-sqh"/>
+                                    <constraint firstAttribute="trailing" secondItem="iOh-S6-kjT" secondAttribute="trailing" constant="36" id="oE1-QX-4tN"/>
+                                    <constraint firstItem="iOh-S6-kjT" firstAttribute="top" secondItem="JeC-ia-Csg" secondAttribute="top" constant="8" id="sHf-Te-KER"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7G-Kj-0E9" userLabel="Sand Timer 10min View">
+                                <rect key="frame" x="107" y="562" width="200" height="195"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QD8-M6-MbT">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="red">
+                                            <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="colorSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KmC-n1-o5t"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10min_hourglass-red stand" translatesAutoresizingMaskIntoConstraints="NO" id="1rH-bT-oOe">
+                                        <rect key="frame" x="36" y="8" width="128" height="179"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1rH-bT-oOe" secondAttribute="bottom" constant="8" id="7sV-Ga-aRo"/>
+                                    <constraint firstAttribute="trailing" secondItem="1rH-bT-oOe" secondAttribute="trailing" constant="36" id="ETa-3Z-zvI"/>
+                                    <constraint firstItem="1rH-bT-oOe" firstAttribute="top" secondItem="b7G-Kj-0E9" secondAttribute="top" constant="8" id="FcH-uf-gAy"/>
+                                    <constraint firstItem="1rH-bT-oOe" firstAttribute="leading" secondItem="b7G-Kj-0E9" secondAttribute="leading" constant="36" id="n1K-f9-4FC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2u5-jn-NJx" userLabel="Current TIme View">
+                                <rect key="frame" x="20" y="765" width="374" height="97"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXJ-X4-fJr">
+                                        <rect key="frame" x="8" y="8" width="358" height="81"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YXJ-X4-fJr" secondAttribute="trailing" constant="8" id="LWs-54-lR0"/>
+                                    <constraint firstAttribute="bottom" secondItem="YXJ-X4-fJr" secondAttribute="bottom" constant="8" id="Ozb-8M-MTk"/>
+                                    <constraint firstItem="YXJ-X4-fJr" firstAttribute="top" secondItem="2u5-jn-NJx" secondAttribute="top" constant="8" id="qLU-oP-5eU"/>
+                                    <constraint firstItem="YXJ-X4-fJr" firstAttribute="leading" secondItem="2u5-jn-NJx" secondAttribute="leading" constant="8" id="uSK-3X-wJf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wj3-ad-X50" secondAttribute="bottom" constant="511" id="0mM-ya-u1F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b7G-Kj-0E9" secondAttribute="trailing" constant="107" id="8W9-bn-SXM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vss-KX-jpk" secondAttribute="trailing" constant="20" id="8tN-6H-Pmn"/>
+                            <constraint firstItem="vss-KX-jpk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BPz-nC-dQz"/>
+                            <constraint firstItem="Wj3-ad-X50" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="GDz-wl-lMa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wj3-ad-X50" secondAttribute="trailing" constant="107" id="LkS-RD-wN2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2u5-jn-NJx" secondAttribute="trailing" constant="20" id="O1p-1C-GEJ"/>
+                            <constraint firstItem="Wj3-ad-X50" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="S4u-AW-CRN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b7G-Kj-0E9" secondAttribute="bottom" constant="105" id="WpR-1B-DgR"/>
+                            <constraint firstItem="2u5-jn-NJx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YUg-UH-zLs"/>
+                            <constraint firstItem="JeC-ia-Csg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="315" id="Zai-VO-5ws"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JeC-ia-Csg" secondAttribute="trailing" constant="107" id="frd-O5-LJa"/>
+                            <constraint firstItem="vss-KX-jpk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mSA-wC-g4B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vss-KX-jpk" secondAttribute="bottom" constant="714" id="qhg-XH-X0j"/>
+                            <constraint firstItem="b7G-Kj-0E9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="518" id="typ-te-sty"/>
+                            <constraint firstItem="JeC-ia-Csg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="utR-jD-RCq"/>
+                            <constraint firstItem="b7G-Kj-0E9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="vQw-Ik-nLP"/>
+                            <constraint firstItem="2u5-jn-NJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vzh-iu-dkZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JeC-ia-Csg" secondAttribute="bottom" constant="308" id="xGV-qH-LUA"/>
+                            <constraint firstItem="2u5-jn-NJx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="721" id="yoe-Wv-6C4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="RemainingTimeLabel" destination="YXJ-X4-fJr" id="ejn-uK-Vzp"/>
+                        <outlet property="TitleLabel" destination="h27-6s-hfP" id="sDm-LP-RV2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10min_hourglass-red stand" width="234" height="426.5"/>
+        <image name="1min_hourglass-dark blue stand" width="234" height="426.5"/>
+        <image name="5min_hourglass-green stand" width="234" height="426.5"/>
+    </resources>
+</document>
